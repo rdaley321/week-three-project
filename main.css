@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 7vw;
+}
+
+td {
+  font-size: 2.5em;
+  text-align: center;
+  border: .02vw solid #FFFFFF;
+  width: 15vw;
+  height: 15vw;
+}
+
+.green {
+  background-color: #57A92D;
+  color: #FFFFFF;
+}
+
+.lightgreen {
+  background-color: #75B958;
+  color: #385728;
+}
+
+#answer {
+  text-align: right;
+}
