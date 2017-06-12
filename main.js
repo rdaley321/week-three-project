@@ -42,7 +42,5 @@ for(let i=0; i < button.length; i++) {
     answer.textContent = ''
     return array + answerBox
   }
-    console.log("array", array)
-    console.log("answerBox", answerBox)
   })
 }
