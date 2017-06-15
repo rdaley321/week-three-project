@@ -60,11 +60,11 @@ for(let i=0; i < button.length; i++) {
     answerBox.push(answer.textContent)
   } else if(button[i] === equals) {
     const final = eval(array.join(''))
-    answer.textContent = final
-    array.length = 0
-    answerBox.length = 0
-    array.push(answer.textContent)
-    answerBox.push(answer.textContent)
+      answer.textContent = final
+      array.length = 0
+      answerBox.length = 0
+      array.push(answer.textContent)
+      answerBox.push(answer.textContent)
   } else if(button[i] === clear) {
     array.length = 0
     answerBox.length = 0
