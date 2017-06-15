@@ -16,6 +16,9 @@ const minus = document.querySelector('#minus')
 const decimal = document.querySelector('#decimal')
 const answer = document.querySelector('#answer')
 const equals = document.querySelector('#equals')
+const modulo = document.querySelector('#modulo')
+const sqrt = document.querySelector('#sqrt')
+const sq = document.querySelector('#sq')
 const button = document.querySelectorAll('.button')
 const array = []
 const answerBox = []
@@ -26,9 +29,35 @@ for(let i=0; i < button.length; i++) {
     array.push(button[i].textContent)
     answer.textContent = answerBox.join('')
   } else if(button[i] === multiply) {
-    answerBox.push("x")
+    answerBox.push("*")
     array.push("*")
     answer.textContent = answerBox.join('')
+  } else if(button[i] === modulo) {
+    answerBox.push("%")
+    array.push("%")
+    answer.textContent = answerBox.join('')
+  } else if(button[i] === sqrt) {
+    let newNum = 0
+    function final() {
+      return newNum = eval(array.join(''))
+    }
+    final()
+    answer.textContent = Math.sqrt(newNum)
+    array.length = 0
+    answerBox.length = 0
+    array.push(answer.textContent)
+    answerBox.push(answer.textContent)
+  } else if(button[i] === sq) {
+    let newNum = 0
+    function final() {
+      return newNum = eval(array.join(''))
+    }
+    final()
+    answer.textContent = Math.pow(newNum,2)
+    array.length = 0
+    answerBox.length = 0
+    array.push(answer.textContent)
+    answerBox.push(answer.textContent)
   } else if(button[i] === equals) {
     const final = eval(array.join(''))
     answer.textContent = final
